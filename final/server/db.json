@@ -1,0 +1,25 @@
+{
+  "transaction": [
+    {
+        "id": "1",
+        "date": "2024-06-01",
+        "description": "Salary",
+        "credit": 5000,
+        "debit": 0
+    },
+    {
+        "id": "2",
+        "date": "2024-06-05",
+        "description": "Groceries",
+        "credit": 0,
+        "debit": 150
+    },
+    {
+        "id": "3",
+        "date": "2024-06-10",
+        "description": "Electricity Bill",
+        "credit": 0,
+        "debit": 100
+    }
+  ]
+}
