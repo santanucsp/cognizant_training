@@ -1,0 +1,24 @@
+h1 {
+  color: #000;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-row {
+  background-color: #343a40;
+  color: white;
+}
+
+#dataGrid {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+}
+
+.mt-3 {
+  border-top: 1px solid #dee2e6;
+  padding-top: 1rem;
+}
