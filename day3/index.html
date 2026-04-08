@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Statement Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="datagrid-crud.css" />
+</head>
+<body class="bg-light p-4">
+  <div class="container">
+    <h1 class="mb-4">Bank Statement Page</h1>
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <div class="table-responsive">
+          <div id="dataGrid" class="table table-striped table-bordered table-hover align-middle">
+            <div class="row header-row text-white p-2 fw-bold border">
+              <div class="col">Transaction ID</div>
+              <div class="col">Transaction Date</div>
+            <div class="col">Header</div>
+              <div class="col">Credit</div>
+              <div class="col">Debit</div>
+              <div class="col">Action</div>
+            </div>
+            <div class="row table-secondary p-2 border">
+              <div class="col"><input id="inputId" type="text" class="form-control form-control-sm" placeholder="Transaction ID" /></div>
+              <div class="col"><input id="inputDate" type="date" class="form-control form-control-sm" /></div>
+              <div class="col"><input id="inputDescription" type="text" class="form-control form-control-sm" placeholder="Header" /></div>
+              <div class="col"><input id="inputCredit" type="number" min="0" step="0.01" class="form-control form-control-sm" placeholder="Credit" /></div>
+              <div class="col"><input id="inputDebit" type="number" min="0" step="0.01" class="form-control form-control-sm" placeholder="Debit" /></div>
+              <div class="col d-flex justify-content-center"><button id="addBtn" class="btn btn-sm btn-success">Add</button></div>
+            </div>
+            <div id="dataBody"></div>
+            <div class="row footer-row text-white p-2 fw-bold border-top border">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"><strong>Total</strong></div>
+              <div class="col text-end"><strong id="footerCredit">0.00</strong></div>
+              <div class="col text-end"><strong id="footerDebit">0.00</strong></div>
+              <div class="col"></div>
+            </div>
+            <div class="row footer-row text-white p-2 fw-bold border-top border">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"><strong>Balance</strong></div>
+              <div class="col"></div>
+              <div class="col text-end"><strong id="totalBalance">0.00</strong></div>
+              <div class="col"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="message" class="mt-2"></div>
+  </div>
+
+  <script src="dist/index.js"></script>
+</body>
+</html>
