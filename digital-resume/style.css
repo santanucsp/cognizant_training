@@ -1,0 +1,9 @@
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+.card {
+  border-radius: 1rem;
+}
+.card-title {
+  letter-spacing: .04em;
+}
