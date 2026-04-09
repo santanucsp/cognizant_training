@@ -1,0 +1,31 @@
+{
+    "customers": [
+      {
+        "CRIN": 10000001,
+        "name": "Alice Johnson",
+        "mobile": "9876543210",
+        "mailId": "alice@test.com"
+      },
+      {
+        "CRIN": 10000002,
+        "name": "Bob Smith",
+        "mobile": "9123456789",
+        "mailId": "bob@test.com"
+      }
+    ],
+    "accounts": [
+      {
+        "accNum": 20000001,
+        "type": "Savings",
+        "balance": 0,
+        "CRIN": 10000001
+      },
+      {
+        "accNum": 20000002,
+        "type": "Current",
+        "balance": 0,
+        "CRIN": 10000001
+      }
+    ],
+    "txns": []
+}
